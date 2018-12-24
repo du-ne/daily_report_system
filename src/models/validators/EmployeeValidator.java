@@ -57,12 +57,10 @@ public class EmployeeValidator {
         return "";
     }
 
-    private static String _validatePassword(String password,Boolean password_check_flag) {
+    private static String _validatePassword(String password, Boolean password_check_flag) {
         if(password_check_flag && (password == null || password.equals(""))) {
             return "パスワードを入力してください。";
         }
-
         return "";
     }
-
 }
